@@ -6,9 +6,9 @@ pipeline {
             steps {
                 bat 'docker pull node:18'
                 reuseNode true // to share the same workspace between stages because by default docker does not share workspace 
-                bat '''
-                    dir
-                '''
+                // bat '''
+                //     dir
+                // '''
             }
         }
     }
